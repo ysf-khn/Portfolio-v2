@@ -1,0 +1,11 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: ArimaKoshi-Light
+font link: https://fonts.google.com/specimen/Arima+Madurai
+font author: NDISCOVER
+font author site: http://www.ndiscovered.com/
+
+
+{"bg":"#423833","icon":"#D1793F","font":"#ffffff","slogan":"#ffffff"}
+      
