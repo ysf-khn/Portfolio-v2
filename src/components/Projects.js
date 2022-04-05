@@ -1,44 +1,59 @@
+import ProjectItem from './ProjectItem';
+
+import breakingBadImg from '../assets/breaking_bad.png';
 import expenseTrackerImg from '../assets/expense_tracker.png';
+import qrCodeImg from '../assets/qrcode.png';
+
+const projectsObj = [
+  {
+    id: 1,
+    name: 'Expense Tracker',
+    desc: 'An app that helps you to track your expenses, built using the useReducer hook and Context API.',
+    src: expenseTrackerImg,
+    githubURL: 'https://github.com/ysf-khn/React-expense-tracker-v1',
+    liveURL: 'https://react-expense-tracker-v1.netlify.app/',
+    badges: ['ReactJS', 'useReducer', 'ContextAPI'],
+  },
+  {
+    id: 2,
+    name: 'Breaking Bad Characters',
+    desc: 'A paginated app that fetches all the characters of the legendary TV series Breaking Bad from the Breaking Bad API. Built using useEffect hook and FetchAPI.',
+    src: breakingBadImg,
+    githubURL: 'https://github.com/ysf-khn/Breaking-Bad-Characters',
+    liveURL: 'https://breaking-react-bad.netlify.app/',
+    badges: ['ReactJS', 'useEffect'],
+  },
+  {
+    id: 3,
+    name: 'QR Code Generator',
+    desc: 'Generates QR codes for text based on input provided by user.',
+    src: qrCodeImg,
+    githubURL: 'https://github.com/ysf-khn/QR-Code-Generator',
+    liveURL: 'https://qrcode-generator-react.netlify.app/',
+    badges: ['ReactJS', 'useEffect', 'API'],
+  },
+];
 
 export const Projects = () => {
   return (
-    <section className='h-screen p-8 text-xl'>
-      <h1 className='text-center font-extrabold text-5xl my-4'>Projects.</h1>
-      <div>
-        <div className='card-1 bg-white rounded-md max-w-xs'>
-          <img
-            src={expenseTrackerImg}
-            alt='Expense Tracker App'
-            className='rounded-md'
+    <section className='p-8 text-xl border border-b-black'>
+      <h1 className='text-center font-extrabold text-5xl mb-8'>
+        Project<span className='text-orange-600'>s.</span>
+      </h1>
+
+      <ul className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 place-items-center'>
+        {projectsObj.map((project) => (
+          <ProjectItem
+            key={project.id}
+            projectName={project.name}
+            desc={project.desc}
+            src={project.src}
+            github={project.githubURL}
+            live={project.liveURL}
+            badges={project.badges}
           />
-          <div className='p-4'>
-            <p className='font-bold mb-2'>Expense Tracker</p>
-            <p className='text-sm text-slate-500 mb-3'>
-              An app that helps you to track your expenses, built using the
-              useReducer hook and Context API.
-            </p>
-            <div className='actions grid grid-cols-2 my-3 gap-3 text-slate-500'>
-              <button className='border border-slate-500 rounded-md'>
-                Github Link
-              </button>
-              <button
-                href='https://react-expense-tracker-v1.netlify.app/'
-                className='border border-zinc-900 rounded-md'
-              >
-                Live Project
-              </button>
-            </div>
-            <div className='badges'>
-              <span className='bg-green-300 py-1 px-3 mr-2 text-sm rounded-md'>
-                ReactJS
-              </span>
-              <span className='bg-green-300 py-1 px-3 text-sm rounded-md'>
-                Context API
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+        ))}
+      </ul>
     </section>
   );
 };
