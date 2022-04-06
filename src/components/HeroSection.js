@@ -2,8 +2,8 @@ import img from '../assets/yusuf.png';
 
 export const HeroSection = () => {
   return (
-    <section className='h-screen p-8 grid lg:grid-cols-2 items-center justify-items-center border border-b-black'>
-      <div className='left font-bold text-4xl '>
+    <section className='lg:h-screen p-8 grid grid-cols-1 lg:grid-cols-2 place-items-center border border-b-black'>
+      <div className='left font-bold text-4xl text-center md:text-left'>
         <h2>I am,</h2>
         <h1 className='text-5xl font-black'>
           Mohammad{' '}
@@ -12,7 +12,9 @@ export const HeroSection = () => {
           </span>{' '}
           Khan
         </h1>
-        <h2>Front-end Developer</h2>
+        <h2 className='italic sm:not-italic mt-3 sm:mt-0'>
+          Front-end Developer
+        </h2>
         <h2 className='mt-6 text-xl italic'>
           I use code to bring{' '}
           <span className='text-orange-600'>ideas to reality.</span>

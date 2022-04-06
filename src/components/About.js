@@ -13,7 +13,7 @@ import {
 
 export const About = () => {
   return (
-    <section className='lg:h-screen sm:h-full md:h-full p-8 text-xl  border border-b-black'>
+    <section className='lg:h-screen sm:h-full p-8 text-xl  border border-b-black'>
       <h1 className='text-center font-extrabold text-5xl my-4'>
         About <span className='text-orange-600'>Me.</span>
       </h1>
@@ -34,7 +34,7 @@ export const About = () => {
           the code.
         </span>
       </p>
-      <p className='text-center md:mt-5 lg:mt-3  font-semibold '>
+      <p className='text-center mt-5 font-semibold '>
         My tech
         <span className='text-orange-500'> stack.</span>
       </p>

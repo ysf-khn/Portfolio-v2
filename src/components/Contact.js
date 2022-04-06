@@ -3,13 +3,13 @@ import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 
 const Contact = () => {
   return (
-    <section className='p-8 text-xl '>
-      <h1 className='text-center font-extrabold text-5xl my-4'>
+    <section className='p-8'>
+      <h1 className='text-center text-2xl md:text-4xl font-extrabold my-4'>
         Liked my work?
         <span className='text-orange-600'> Let's Talk.</span>
       </h1>
       <div className='grid place-items-center'>
-        <p>
+        <p className='text-lg md:text-2xl text-center'>
           Reach out to me at{' '}
           <a
             href='mailto:yusufmohd72@gmail.com'
