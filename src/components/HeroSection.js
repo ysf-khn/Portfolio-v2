@@ -20,9 +20,17 @@ export const HeroSection = () => {
           <span className='text-orange-600'>ideas to reality.</span>
         </h2>
 
-        <button className='bg-orange-600 px-4 py-2 mt-6 text-base font-bold rounded-3xl hover:bg-orange-500 transition ease-in-out delay-150 hover:scale-105 duration-300 shadow-lg'>
-          Get in touch!
-        </button>
+        <a
+          href='contact'
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.replace('/#contact');
+          }}
+        >
+          <button className='bg-orange-600 px-4 py-2 mt-6 text-base font-bold rounded-3xl hover:bg-orange-500 transition ease-in-out delay-150 hover:scale-105 duration-300 shadow-lg'>
+            Get in touch!
+          </button>
+        </a>
       </div>
       <div className='right'>
         <img
