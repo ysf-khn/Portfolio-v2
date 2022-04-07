@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 
 const Contact = () => {
   return (
-    <section className='p-8'>
+    <section id='contact' className='p-8'>
       <h1 className='text-center text-2xl md:text-4xl font-extrabold my-4'>
         Liked my work?
         <span className='text-orange-600'> Let's Talk.</span>

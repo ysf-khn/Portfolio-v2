@@ -13,7 +13,10 @@ import {
 
 export const About = () => {
   return (
-    <section className='lg:h-screen sm:h-full p-8 text-xl  border border-b-black'>
+    <section
+      id='about'
+      className='lg:h-screen sm:h-full p-8 pt-16 text-xl  border border-b-black'
+    >
       <h1 className='text-center font-extrabold text-5xl my-4'>
         About <span className='text-orange-600'>Me.</span>
       </h1>

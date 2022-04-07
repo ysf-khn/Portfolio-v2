@@ -36,7 +36,7 @@ const projectsObj = [
 
 export const Projects = () => {
   return (
-    <section className='p-8 text-xl border border-b-black'>
+    <section id='projects' className='p-8 pt-16 text-xl border border-b-black'>
       <h1 className='text-center font-extrabold text-5xl mb-8'>
         Project<span className='text-orange-600'>s.</span>
       </h1>

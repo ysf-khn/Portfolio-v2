@@ -5,7 +5,7 @@ import logo from '../assets/vector/logo_white.svg';
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className='bg-slate-900'>
+    <nav className='bg-slate-900/80 sticky top-0 backdrop-blur-sm z-10'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16'>
           <div className='flex-shrink-0'>
@@ -15,22 +15,34 @@ export const Navbar = () => {
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baseline space-x-4'>
                 <a
-                  href='b'
-                  className=' hover:bg-gray-700 text-white text-lg px-3 py-2 rounded-md font-medium'
+                  href='about'
+                  className=' hover:bg-orange-500 text-white hover:text-black text-lg px-3 py-2 rounded-md font-medium transition duration-500 hover:ease-in-out'
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.replace('/#about');
+                  }}
                 >
                   About Me
                 </a>
 
                 <a
-                  href='a'
-                  className='text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium'
+                  href='projects'
+                  className='hover:bg-orange-500 text-white hover:text-black px-3 py-2 rounded-md text-lg font-medium transition duration-500 hover:ease-in-out'
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.replace('/#projects');
+                  }}
                 >
                   Projects
                 </a>
 
                 <a
-                  href='b'
-                  className='text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium'
+                  href='contact'
+                  className='hover:bg-orange-500 text-white hover:text-black px-3 py-2 rounded-md text-lg font-medium transition duration-500 hover:ease-in-out'
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.replace('/#contact');
+                  }}
                 >
                   Contact
                 </a>
@@ -41,7 +53,7 @@ export const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type='button'
-              className='bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'
+              className='bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-orange-500 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white transition duration-500 hover:ease-in-out'
               aria-controls='mobile-menu'
               aria-expanded='false'
             >
@@ -97,22 +109,34 @@ export const Navbar = () => {
           <div className='md:hidden text-center' id='mobile-menu'>
             <div ref={ref} className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
               <a
-                href='c'
-                className='hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium'
+                href='about'
+                className='hover:bg-orange-500 text-white hover:text-black block px-3 py-2 rounded-md text-base font-medium transition duration-500 hover:ease-in-out'
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.replace('/#about');
+                }}
               >
                 About Me
               </a>
 
               <a
-                href='d'
-                className='text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium'
+                href='projects'
+                className='hover:bg-orange-500 text-white hover:text-black block px-3 py-2 rounded-md text-base font-medium transition duration-500 hover:ease-in-out'
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.replace('/#projects');
+                }}
               >
                 Projects
               </a>
 
               <a
-                href='e'
-                className='hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium'
+                href='contact'
+                className='hover:bg-orange-500 text-white hover:text-black block px-3 py-2 rounded-md text-base font-medium transition duration-500 hover:ease-in-out'
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.replace('/#contact');
+                }}
               >
                 Contact
               </a>
