@@ -8,14 +8,6 @@ const ProjectItem = ({ projectName, desc, src, github, live, badges }) => {
           <p className='text-sm text-slate-500 mb-3'>{desc}</p>
           <div className='actions grid grid-cols-2 my-3 gap-3 '>
             <a
-              href={github}
-              className='border border-green-300 rounded-md text-center hover:bg-green-300 hover:text-white'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Github Link
-            </a>
-            <a
               href={live}
               className='border border-green-300 rounded-md text-center hover:bg-green-300 hover:text-white'
               target='_blank'
@@ -23,10 +15,21 @@ const ProjectItem = ({ projectName, desc, src, github, live, badges }) => {
             >
               Live Project
             </a>
+            <a
+              href={github}
+              className='border border-green-300 rounded-md text-center hover:bg-green-300 hover:text-white'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Github Link
+            </a>
           </div>
           <div className='grid grid-cols-3 place-items-center gap-1'>
-            {badges.map((badge) => (
-              <span className='bg-green-300 p-1 text-sm rounded-md w-full text-center'>
+            {badges.map((badge, i) => (
+              <span
+                key={Math.random()}
+                className='bg-green-300 p-1 text-sm rounded-md w-full text-center'
+              >
                 {badge}
               </span>
             ))}

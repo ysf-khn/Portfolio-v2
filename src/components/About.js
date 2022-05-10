@@ -5,6 +5,9 @@ import {
   SiJavascript,
   SiReact,
   SiRedux,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
   SiReactrouter,
   SiGit,
   SiGithub,
@@ -15,7 +18,7 @@ export const About = () => {
   return (
     <section
       id='about'
-      className='lg:h-screen sm:h-full p-8 pt-16 text-xl  border border-b-black'
+      className=' sm:h-full p-8 pt-16 text-xl  border border-b-black'
     >
       <h1 className='text-center font-extrabold text-5xl my-4'>
         About <span className='text-orange-600'>Me.</span>
@@ -48,6 +51,9 @@ export const About = () => {
             <SiCss3 className='hover:text-blue-500 hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />
             <SiJavascript className='hover:text-yellow-500 hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />
             <SiReact className='hover:text-blue-600 hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />
+            <SiNodedotjs className='hover:text-green-800 hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />
+            <SiExpress className='hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />
+            <SiMongodb className='hover:text-green-600 hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />
             <SiGit className='hover:text-red-600 hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />
             <SiGithub className='hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />
             <SiTailwindcss className='hover:text-blue-600 hover:drop-shadow-lg transition ease-in-out delay-150 hover:scale-105 duration-500' />

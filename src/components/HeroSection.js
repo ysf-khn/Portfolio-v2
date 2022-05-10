@@ -13,7 +13,7 @@ export const HeroSection = () => {
           Khan
         </h1>
         <h2 className='italic sm:not-italic mt-3 sm:mt-0'>
-          Front-end Developer
+          Full-Stack Developer
         </h2>
         <h2 className='mt-6 text-xl italic'>
           I use code to bring{' '}
