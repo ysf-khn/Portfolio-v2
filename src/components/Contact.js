@@ -20,7 +20,7 @@ const Contact = () => {
         </p>
         <IconContext.Provider value={{ style: { fontSize: '35px' } }}>
           <div className='grid grid-cols-3 gap-16 mt-6'>
-            <a href='https://www.linkedin.com/in/mohammad-yusuf-khan-4862511b2/'>
+            <a href='https://www.linkedin.com/in/moyusufkhan/'>
               <BsLinkedin className='hover:text-blue-800' />
             </a>
             <a href='https://github.com/ysf-khn'>
